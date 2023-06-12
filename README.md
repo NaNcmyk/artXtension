@@ -2,7 +2,7 @@
 
 Have you ever wanted to transform your portal into the World Wide Web into...your very own finger-painting canvas?! And, to clarify, by *finger-painting*, I mean, paw-painting. Because...err...you don't have human fingers 🙃. Allow me to introduce you to this artXtension--you animal, you. It's about time you show the world your portrait of an artist--as a young pup 🎨🐾🐾🖼️
 
-*Side note: This browser extension was created as part of a larger project in 2021. Check out the [Noah's ARTkives](https://github.com/NaNcmyk/Noahs_ARTkives) repo for more info.*
+*Side note: This browser extension was created as part of a larger project in 2021. Check out the [Noahs_ARTkives](https://github.com/NaNcmyk/Noahs_ARTkives) repo for more info.*
 
 ---
 
@@ -44,7 +44,7 @@ This repo consists of 10 files, all within the root directory:
         + `name` - Noah's art-X-tension is the name of the extension
         + `version` - updated to 2.0 (2023)
     + As of 2023, Chrome has migrated to Manifest v3. This extension was originally written for Manifest v2 (in 2021). While v2 continues to work on Firefox, it is no longer supported by Chrome.
-    + The code has now been updated to reflect [Manifest v3's specs](https://developer.chrome.com/docs/extensions/mv3/mv3-migration-checklist/).
+    + *manifest.json* has now been updated to reflect [Manifest v3's specs](https://developer.chrome.com/docs/extensions/mv3/mv3-migration-checklist/).
     + In addition to the three boilerplate keys, the Manifest contains these additional six keys:
         + `description` - This is a short blurb that introduces users to the extension. It's used by the Chrome Web Store and in the extension management page.
         + `icons` - This lists all icons provided in the extension's directory. There are three in this extension: _icon16.png_, _icon64.png_, _icon128.png_.
@@ -54,7 +54,7 @@ This repo consists of 10 files, all within the root directory:
         + `action` (formerly `browser-action` for Manifest v2) - for all things related to the pop-up menu... _logo64.png_ is specified as the pop-up button's default logo. _popup.html_ is also referenced here. Text for the optional tooltip that displays when the user hovers over the pop-up button is included here as well.
 
 1. **_content.js_**
-    + Much of the code for the extension's paintng and stamping features has been adapted from _paint.js_.
+    + Much of the code for the extension's painting and stamping features has been adapted from [_paint.js_](https://github.com/NaNcmyk/Noahs_ARTkives/blob/main/scripts/paint.js) of the *Noahs_ARTkives* repo.
     + The height of the canvas has been set to document's full body height to allow users to draw beyond the window's inner height, so they can paint over longer pages that have scrollable content.
     + The `pageX` and `pageY` (instead of `clientX` and `clientY`) `MouseEvent` properties are used to allow users to stamp beyond the window's inner width and inner height. Since the canvas is now the entire page of the document, and not just limited to the window height (which was the case for the main website's canvas), the `MouseEvent` properties that capture the `x` and `y` positions of the pointer event had to be updated accordingly. 
     + The canvas's cursor has been set to crosshair to indicate when web pages can be painted over.
