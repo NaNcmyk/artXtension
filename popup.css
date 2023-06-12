@@ -1,0 +1,101 @@
+:root {
+    --black: #000;
+    --green: #83ccaf;
+    --pink: #ec6ead;
+    --white: #fff;
+    --yellow: #f3ad08;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 260px;
+    min-height: 300px;
+    background-color: var(--yellow);
+    font-family: "Syne Mono", monospace;
+    font-size: 1rem;
+}
+
+#blendmode-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1.5rem 2rem 1rem;
+    border: black dashed 4px;
+}
+
+/* ---------------- radio inputs-------------------- */
+.blendmode-list-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+/* remove native radio button style */
+.blendmode-list-item input[type="radio"] {
+    display: none;
+    outline: 0;
+}
+
+/* custom radio button styles */
+.blendmode-list-item input[type="radio"] + label:before,  
+.blendmode-list-item input[type="radio"]:not(:checked) + label:before {
+    content: "⬜ ";
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+}
+
+.blendmode-list-item input[type="radio"]:checked + label:before {
+    content: "🐽 ";
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.blendmode-list-item input[type="radio"]:checked + label {
+    color: var(--white);
+}
+
+/* --------------submit button------------------------- */
+#blendmode-modal .submit-button input {
+    background: linear-gradient(to bottom, var(--yellow), var(--pink));
+    padding: .8rem 1rem;
+    margin-top: 1rem;
+    border: 0;
+    border-radius: 64% 36% 70% 30% / 63% 55% 45% 37%;
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-radius 1s ease-in-out;
+}
+
+#blendmode-modal .submit-button input:hover {
+    animation: blob 1s ease-in;
+    font-weight: bold;
+    filter: saturate(120%) brightness(120%);
+}
+
+@keyframes blob {
+    0% {
+        border-radius: 94% 6% 70% 30% / 73% 44% 56% 27%;
+    }
+    30% {
+        border-radius: 73% 44% 56% 27% / 94% 6% 70% 30%;
+    }
+    60% {
+        border-radius: 96% 4% 90% 10% / 30% 75% 25% 70%;
+    }
+    100% {
+        border-radius: 64% 36% 70% 30% / 63% 55% 45% 37%;
+    }
+}
+
+#blendmode-modal .submit-button #submit:focus {
+    outline: 0;
+}
+
+#blendmode-modal .submit-button #submit:active {
+    background: linear-gradient(to bottom, var(--pink), var(--green));
+}

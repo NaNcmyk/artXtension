@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "Noah's art-X-tension",
+    "version": "1.0",
+    "description": "This is your Harold and the Purple Crayon moment. Go forth and conquer! Paint with all the colors of the wind~",
+    "icons": { 
+        "16": "logo16.png",
+        "64": "logo64.png",
+        "128": "logo128.png" 
+    },
+    "web_accessible_resources": ["*svg"],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": ["content.js"],
+            "css": ["content.css"]
+        }
+    ],
+    "permissions": [
+        "tabs", 
+        "activeTab",
+        "storage"
+    ],
+    "browser_action": { 
+        "default_icon": "logo64.png", 
+        "default_popup": "popup.html", 
+        "default_title": "Noah's art-X-tension" 
+    }
+}
