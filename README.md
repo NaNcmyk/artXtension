@@ -4,7 +4,10 @@
     <img src="demo.gif" alt="demo" width="75%">
 </div>
 <br>
-Have you ever wanted to transform your portal into the World Wide Web, into...your very own finger-painting canvas?! And, to clarify, by *finger-painting*, I mean, paw-painting. Because...err...you don't have human fingers 🙃. Allow me to introduce you to this artXtension--you animal, you. It's about time you show the world your portrait of an artist--as a young pup 🎨🐾🐾🖼️
+
+Have you ever wanted to transform your portal into the World Wide Web, into...your very own finger-painting canvas?! And, to clarify, by *finger-painting*, I mean, paw-painting. Because...err...you don't have human fingers 🙃. Allow me to introduce you to this artXtension--you animal, you. It's about time you show the world your portrait of an artist--as a young pup 🎨🐾🐾🖼️ Woof.
+
+<br>
 
 *Side note: This browser extension was created as part of a larger project in 2021. Check out the [Noahs_ARTkives](https://github.com/NaNcmyk/Noahs_ARTkives) repo for more info.*
 
