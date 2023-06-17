@@ -31,7 +31,7 @@ In addition to official browser-specific docs, [Smashing Magazine has written a 
 
 **USER GUIDE**
 
-*This is the quick  and dirty version of how the extension works. See Technical Guide, below, for a more detailed run-down.*
+*This is the quick and dirty version of how the extension works. See Technical Guide, below, for a more detailed run-down.*
 
 1. The crosshair cursor indicates that the web page you're currently viewing is ready to be painted on. (E.g., navigate to any Google search results page, the default cursor should now be a crosshair cursor.)
 2. While the web page is acting as a canvas (backdrop) for your masterpieces, note that its content will not be able to receive pointer events. E.g., any links on that web page will not be clickable.
@@ -39,11 +39,17 @@ In addition to official browser-specific docs, [Smashing Magazine has written a 
 4. To activate the paw-stamping functionality, depending on what device you're using, simply double-tap your screen or double-click your mouse.
 5. Reload page to erase and start again. Or navigate to a new page to set up a new canvas.
 
+<br>
+
+See your masterpiece featured--front and center!--in your favorite art museum's collection 😍
+
+![MoMA collection](/moma.jpg)
+
 ---
 
 **TECHNICAL GUIDE**
 
-This repo consists of 10 files, all within the root directory:
+The *project* folder contains the 10 files required to install the extension:
 
 1. **_manifest.json_**
     + This _.json_ file contains the extension's meta data. All extensions are required to have a Manifest. Per Chrome documentation, at minimum, a Manifest must consist of the following three keys:

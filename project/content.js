@@ -9,6 +9,9 @@ canvas.style.zIndex = 1000;
 canvas.style.cursor = 'crosshair';
 // canvas.style.pointerEvents = 'none';
 
+// for touchscreen users - disable browser handling of all panning and zooming gestures
+body.style.touchAction = 'none';
+
 // append canvas to body
 body.appendChild(canvas);
 
