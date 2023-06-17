@@ -15,11 +15,11 @@ Have you ever wanted to transform your portal into the World Wide Web, into...yo
 
 **INSTALLATION**
 
-🖥️ **Chrome Users**: Head over to the below URL. Switch on developer mode to reveal the "load unpacked" button. Click on "load unpacked" to upload the unzipped _artXtension_ folder to install the extension.
+🖥️ **Chrome Users**: Head over to the below URL. Switch on developer mode to reveal the "load unpacked" button. Click on "load unpacked". Upload the _project_ folder (and all of its contents) to install the extension.
 
     chrome://extensions/
 
-🖥️ **Firefox Users**: Head over to the below URL. Click "Load Temporary Add-on..." to upload the _manifest.json_ file from the unzipped _artXtension_ folder to install the extension.
+🖥️ **Firefox Users**: Head over to the below URL. Click "Load Temporary Add-on...". Upload just the _manifest.json_ file in the _project_ directory to install the extension.
 
     about:debugging#/runtime/this-firefox
 
