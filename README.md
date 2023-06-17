@@ -34,16 +34,23 @@ In addition to official browser-specific docs, [Smashing Magazine has written a 
 *This is the quick and dirty version of how the extension works. See Technical Guide, below, for a more detailed run-down.*
 
 1. The crosshair cursor indicates that the web page you're currently viewing is ready to be painted on. (E.g., navigate to any Google search results page, the default cursor should now be a crosshair cursor.)
-2. While the web page is acting as a canvas (backdrop) for your masterpieces, note that its content will not be able to receive pointer events. E.g., any links on that web page will not be clickable.
+2. While the web page is acting as a canvas (backdrop) for your masterpieces, note that its content may not be able to receive pointer events. E.g., links--though tabbable--may not be clickable.
 3. Paintbrush color is rainbow 🌈 by default. Although this base color is fixed, you can still change the blend modes to manipulate the colors. Open the extension's pop-up to select a new blend mode. ⚠️ *Remember to click the "change blend mode" button to confirm the change.*
-4. To activate the paw-stamping functionality, depending on what device you're using, simply double-tap your screen or double-click your mouse.
+4. To activate the paw-stamping functionality, depending on device, simply double-tap your screen or double-click your mouse.
 5. Reload page to erase and start again. Or navigate to a new page to set up a new canvas.
 
 <br>
 
-And voilà! See your masterpiece featured--front and center!--in your favorite art museum's collection 😍
+And voilà! 
+
+See your masterpiece featured--front and center!--in your favorite art museum's collection 😍
 
 ![MoMA collection](/moma.jpg)
+
+And, oh--not to mention THE COLLABS! 🤩
+
+![Duchamp Collab](/tate_duchamp.jpg)
+
 
 ---
 
