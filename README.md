@@ -41,7 +41,7 @@ In addition to official browser-specific docs, [Smashing Magazine has written a 
 
 <br>
 
-See your masterpiece featured--front and center!--in your favorite art museum's collection 😍
+And voilà! See your masterpiece featured--front and center!--in your favorite art museum's collection 😍
 
 ![MoMA collection](/moma.jpg)
 
